@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAELUM RP - Conectando...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("https://raw.githubusercontent.com/betigosgs10/caelumrp-assets/main/caelum_background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .loading-container {
+            text-align: center;
+            padding: 40px;
+            margin-bottom: 100px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 
+                         0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .progress-bar-container {
+            width: 400px;
+            height: 30px;
+            background-color: rgba(30, 30, 30, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 70%;
+            background: linear-gradient(
+                90deg,
+                rgba(100, 149, 237, 0.8) 0%,
+                rgba(138, 43, 226, 0.8) 50%,
+                rgba(100, 149, 237, 0.8) 100%
+            );
+            background-size: 200% 100%;
+            animation: loading 2s linear infinite;
+            border-radius: 13px;
+        }
+
+        @keyframes loading {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <h1>CAELUM</h1>
+        <p class="subtitle">Conectando con Hogwarts Roleplay...</p>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://raw.githubusercontent.com/betigosgs10/caelumrp-assets/main/SERVER_MENUsuave.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
+
+
